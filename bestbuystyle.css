@@ -1,0 +1,252 @@
+            body{
+                overflow-y: auto;
+                height: 3000px;
+            }
+            img.left{
+                align-items: left;
+            }
+            header{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                
+            }
+            section.left{
+                position:fixed;
+                left:0px;
+                background-color: rgba(255, 187, 0, 0.918);
+                margin-top: 60px;
+                width: 11%;
+                height: 3000px;
+            }
+            aside.right{
+                background-color: white;
+
+            }
+            p{
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+            }
+            p.link{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            span{
+                font-family: Arial, sans-serif;
+            }
+            p.red{
+                font-family: Arial, sans-serif;
+                color: red;
+                font-size: 20px;
+                font-weight: bold;
+                align-content: center;
+            }
+            span.bold{
+                font-weight: bold;
+                font-size: 12px;
+            }
+            span.bigbold{
+                font-size:18px;
+                font-weight: bold;
+            }
+            span.big{
+                font-size: 18px;
+                text-align: center;
+
+            }
+            span.smallboldbrown{
+                color:brown;
+                font-weight: bold;
+                font-size: 10px;
+            }
+            span.bigboldbrown{
+                color:brown;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            span.bigbolditalbrown{
+                color:brown;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 16px;
+            }
+            button.go{
+                background-image: url(https://web.archive.org/web/20000229201719im_/http://www.bestbuy.com/images/go.gif);
+                width: 20px;
+                height: 20px;
+            }
+            p.right{
+                text-align: right;
+                font-size: 11px;
+            }
+            aside{
+                position: fixed;
+                margin-top: 60px;
+                left: 140px;
+                width: 36.7%;
+                height:1500px;
+            }
+            div.wrapper{
+                position:fixed;
+                display: grid;
+                margin-top: 75px;
+                left: 140px;
+                width: 36.7%;
+                height:350px;
+                grid-template-columns: 40% 1% 59%;
+            }
+            div.nestwrapper{
+                position: fixed;
+                display:grid;
+                grid-template-columns: 32% 68%;
+            }
+            nav.date{
+                position:fixed;
+                margin-top: 60px;
+                left: 140px;
+                width: 36.7%;
+                height:15px;
+                text-align: right;
+                font-size: 12px;
+            }
+            #d1{
+                font-size: 12px;
+                text-align: center;
+            }
+            #d2{
+                font-size: 12px;
+                text-align: center;
+            }
+            #d3{
+                position: relative;
+                font-size: 12px;
+                text-align: left;
+                left: 10px;
+            }
+            #d4{
+                position: relative;
+                font-size: 10px;
+                text-align: left;
+                left: 40px;
+            }
+            #d5{
+                font-size: 12px;
+                text-align: center;
+                margin-top: 100px;
+            }
+            #d6{
+                font-size: 12px;
+                text-align: center;
+                margin-top: 25px;
+            }
+            #d7{
+                margin-top: 5px;
+                position: relative;
+                font-size: 12px;
+                text-align: left;
+                left: 10px;
+            }
+            #d8{
+                position: relative;
+                font-size: 10px;
+                text-align: left;
+                left: 20px;
+            }
+            #d9{
+                position: relative;
+                font-size: 12px;
+                text-align: center;
+                margin-top: 110px;
+            }
+            #full{
+                position:fixed;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            div.quarterwrapper{
+                position:fixed;
+                display: grid;
+                margin-top: 370px;
+                left: 140px;
+                width: 36.7%;
+                height:100px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            }
+            #d10{
+                font-size: 12px;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            #d11{
+                margin-top: 5px;
+                left: 5px;
+                position: relative;
+                font-size: 12px;
+                text-align: center;   
+           
+            }
+            #d12{
+                margin-top: 5px;
+                left: 5px;
+                position: relative;
+                font-size: 12px;
+                text-align: left;
+                margin-top: 10px;
+            }
+            #d13{
+                margin-top: 5px;
+                left: 5px;
+                position: relative;
+                font-size: 12px;
+                text-align: center;
+            }
+            #d14{
+                margin-top: 5px;
+                left: 5px;
+                position: relative;
+                font-size: 12px;
+                text-align: left;
+            }
+            #d15{
+                margin-top: 10px;
+                position: relative;
+                font-size: 12px;
+                text-align: center;
+            }
+            #d16{
+                margin-top: 20px;
+                position: relative;
+                font-size: 20px;
+                text-align: left;
+            }
+            #d17{
+                position: relative;
+                margin-top: 5px;
+                font-size: 12px;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            #d18{
+                left: 5px;
+                position: relative;
+                margin-top: 5px;
+                font-size: 12px;
+                text-align: left;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            #d19{
+                position: relative;
+                font-size: 12px;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            p.hyperlink{
+                font: blue;
+            }
+

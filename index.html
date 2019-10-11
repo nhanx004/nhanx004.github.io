@@ -1,0 +1,52 @@
+<!-- 
+
+//-->
+
+<html>
+<head>
+        <title> XKCD Password Generator </title>
+        <link rel = "stylesheet" href = "xkcdpassword.css">
+</head>
+<body>
+    <main>
+    <header type = "title">
+        XKCD Password Generator
+    </header>
+    <div>
+        <span type = "bold" size = "30">Minimum Word Length</span>
+        <select id = "minword">
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+        </select>
+    </div>
+    <div>
+        <span type = "bold" size = "40">Maximum Word Length</span>
+        <select id = "maxword">
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+        </select>
+    </div>
+    <div>
+        <span type = "bold">Maximum Length</span>
+        <input id = "text" value = "0" size = "30">
+    </div>
+    <div>
+        <input type = "checkbox" id = "easytype" name = "check1" value = "easy">Easy typing</br>
+        <input type = "checkbox" id = "subtype" name = "check1" value = "sub">Number Substitutions</br>
+    </div>
+    <div>
+        <button onClick = "calculatePasswords()">Submit</button>
+    </div>
+    </main>
+    <p class = "center">Possible Passwords</p>
+    <table id = "pwhistory">
+    </table>
+</body>
+<script type="text/javascript" src="xkcdpassword.js">
+</script>
+
+</html>

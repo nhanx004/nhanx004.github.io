@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/wordstyle.css">
+    </head>
+    <body>
+        {% block navbar %}
+        <nav>
+            <h1>Word List Program by Benjamin Nhan</h1>
+        </nav>
+        {% endblock %}
+
+        {% block content %}
+        default content
+        {% endblock %}
+
+        {% block footer %}
+        <footer><a href=https://github.com/nhanx004/nhanx004.github.io>GitHub Repository</a></footer>
+        {% endblock %}
+    </body>
+
+    <script type="text/javascript">
+        //Grab the definition
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        async function defineWord(word) {
+          modal.style.display = 'flex';
+          let definitionList = document.querySelector('#modal-list');
+          definitionList.innerHTML = "";
+          let init = {
+            mode: 'cors',
+            method: 'GET',
+          }
+          url = "proxy/" + word;
+          var wordname = document.createElement("h3");
+          wordname.innerHTML = ("Definition(s)");
+          definitionList.appendChild(wordname);
+          let resp = await fetch(url, init);
+          response = await resp.json();
+          for (var i = 0; i < response.length; i++) {
+            var definition = document.createElement("li");
+            definition.innerHTML = (response[i]["shortdef"][0]);
+            definitionList.appendChild(definition);
+          }
+        }
+
+
+        //Close event
+        //closeBtn.addEventListener('click', closeModal);
+        //function openModal() {modal.style.display = 'block';}
+        span.onclick = function() {modal.style.display = 'none';}
+      </script>
+</html>
